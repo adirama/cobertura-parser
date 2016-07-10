@@ -2,7 +2,6 @@ package com.snacktrace.cobertura.impl
 
 import java.util
 
-import com.snacktrace.cobertura.impl.CoberturaParserImpl
 import org.scalatest.WordSpec
 
 /**
@@ -10,12 +9,12 @@ import org.scalatest.WordSpec
   */
 class CoverageParserImplTest extends WordSpec {
   trait Fixture {
+    val parser = new CoberturaParserImpl()
   }
 
   "CoverageParser" should {
     "parse coverage" in new Fixture {
-      val paths = new util.HashSet[String]()
-      val result = new CoberturaParserImpl().parse(getClass.getResourceAsStream("/coverage.xml"))
+      val result = parser.parse(getClass.getResourceAsStream("/coverage.xml"))
       println(result)
     }
   }

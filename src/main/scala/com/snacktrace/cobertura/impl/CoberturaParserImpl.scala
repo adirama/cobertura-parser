@@ -4,6 +4,8 @@ import java.io.InputStream
 
 import com.snacktrace.cobertura._
 
+import scala.xml.Node
+
 /**
   * Created by ultmast on 9/07/16.
   */
