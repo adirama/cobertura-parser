@@ -8,7 +8,7 @@ import org.scalatest.WordSpec
 /**
   * Created by ultmast on 9/07/16.
   */
-class CoverageParserTest extends WordSpec {
+class CoverageParserImplTest extends WordSpec {
   trait Fixture {
   }
 
